@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import List from './List';
 
 it('renders without crashing', () => {
-  const sec = document.createElement('section');
-  ReactDOM.render(<List />, sec);
-  ReactDOM.unmountComponentAtNode(sec);
+  const div = document.createElement('div');
+  ReactDOM.render(<List />, div);
+  ReactDOM.unmountComponentAtNode(div);
 });

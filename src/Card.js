@@ -1,8 +1,8 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 import './Card.css';
 
-export default function Card(props) {
+export default function Card(props){
   return (
     <div className='Card'>
       <button
@@ -14,4 +14,5 @@ export default function Card(props) {
       <p>{props.content}</p>
     </div>
   )
-  }
+}
+
