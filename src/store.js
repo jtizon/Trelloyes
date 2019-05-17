@@ -1,4 +1,4 @@
-const STORE = {
+export const STORE = {
     lists: [
       {
         id: '1',
@@ -35,5 +35,6 @@ const STORE = {
       'k': { title: 'Eleventh card', content: 'lorem ipsum' },
       'l': { title: 'Twelth card', content: 'lorem ipsum' },
       'm': { title: 'Thirteenth card', content: 'lorem ipsum' },
-    },
+    }
   }
+

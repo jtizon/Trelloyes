@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import List from './List'
+import List from './List';
+import {STORE} from './store';
 import Messages from './Messages';
 import './App.css';
 
 class App extends Component {
-  static defaultProps = {
-    store: {
-      lists: [],
-      allCards: {},
-    }
-  };
 
   render() {
-    const { store } = this.props;
+    const store = STORE;
+    console.log('cardIDs', store.lists);
+    console.log('allCards', store.allCards);
     return (
       <main className='App'>
         <header className='App-header'>
@@ -21,6 +18,7 @@ class App extends Component {
         <div className='App-list'>
           {store.lists.map(list => 
             {
+              
               return  <List
                         key={list.id}
                         header={list.header}

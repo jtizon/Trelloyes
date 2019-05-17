@@ -7,3 +7,5 @@ it('renders without crashing', () => {
   ReactDOM.render(<Messages />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+
